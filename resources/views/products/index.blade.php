@@ -20,8 +20,12 @@
 						<strong>{{ $product->name }}</strong>
 						{{ $product->short }}
 					</td>
-					<td>Ver</td>
-					<td>Editar</td>
+					<td>
+						<a href="{{ route('products.show', $product->id) }}">Ver</a>
+					</td>
+					<td>
+						<a href="{{ route('products.edit', $product->id) }}">Editar</a>
+					</td>
 					<td>Eliminar</td>
 				</tr>
 				@endforeach
