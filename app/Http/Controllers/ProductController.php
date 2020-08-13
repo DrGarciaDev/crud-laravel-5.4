@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ProductRequest;
 use App\Product;
 
 class ProductController extends Controller
@@ -17,10 +18,21 @@ class ProductController extends Controller
     {
     	return view('products.create');
     }
+
+    public function store(ProductRequest $request)
+    {
+    	
+    }
+
     public function edit($id)
     {
     	$product = Product::find($id);
     	return view('products.edit', compact('product'));
+    }
+
+    public function update(ProductRequest $request, $id)
+    {
+    	
     }
 
     public function show($id)
