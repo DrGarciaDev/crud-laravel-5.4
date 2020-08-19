@@ -63,6 +63,29 @@ return [
             'bucket' => env('AWS_BUCKET'),
         ],
 
+        'google' => [
+            'driver'        => 'google',
+            'clientId'      => env('GOOGLE_DRIVE_CLIENT_ID'),
+            'clientSecret'  => env('GOOGLE_DRIVE_CLIENT_SECRET'),
+            'refreshToken'  => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
+            'folderId'      => env('GOOGLE_DRIVE_FOLDER_ID'),
+        ],
+
+        'ftp' => [
+            'driver'   => 'ftp',
+            'host'     => env('FTP_HOST'),
+            'username' => env('FTP_USERNAME'),
+            'password' => env('FTP_PASSWORD'),
+ 
+            // Optional FTP Settings...
+            'port'     => 21,
+            'root'     => '/web',
+            // 'passive'  => true,
+            // 'ssl'      => true,
+            // 'timeout'  => 30,
+            // 'ignorePassiveAddress' => false,
+        ],
+
     ],
 
 ];

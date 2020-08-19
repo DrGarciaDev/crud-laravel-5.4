@@ -38,3 +38,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+## Extension Configuration
+
+- Uncomment ;extension=ftp in the file php.ini of php current
+- Download cacert.pem following this instructions https://stackoverflow.com/questions/42094842/curl-error-60-ssl-certificate-in-laravel-5-4/49071524

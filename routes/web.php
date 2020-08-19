@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/products', 'ProductController');
+
+Route::get('/backups', 'RespaldosController@realizarTransferenciaClouds');
